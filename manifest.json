@@ -1,0 +1,7 @@
+{
+  "name": "SpotifyControlBar",
+  "description": "Control Spotify playback directly from Discord chat",
+  "version": "1.0.0",
+  "authors": [{ "name": "cosmi" }],
+  "main": "index.js"
+}
