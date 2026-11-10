@@ -52,15 +52,12 @@ __export(index_exports, {
   onUnload: () => onUnload
 });
 module.exports = __toCommonJS(index_exports);
-var import_react2 = __toESM(require("react"));
-var patcher = __toESM(require("@valenced/patcher"));
-
-// src/components/SpotifyBar.tsx
-var import_react = __toESM(require("react"));
-var import_react_native = require("react-native");
-
-// src/mod.ts
-var metro = __toESM(require("@valenced/metro"));
+var _val = (typeof valenced !== "undefined" ? valenced : (typeof window !== "undefined" ? window.valenced : {}));
+var metro = _val.metro || {};
+var patcher = _val.patcher || {};
+var import_react = _val.metro?.common?.React || (typeof React !== "undefined" ? React : {});
+var import_react2 = import_react;
+var import_react_native = _val.metro?.common?.ReactNative || (typeof ReactNative !== "undefined" ? ReactNative : {});
 function safe(fn) {
   try {
     return fn();
