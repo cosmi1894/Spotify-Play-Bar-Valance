@@ -1,7 +1,12 @@
 {
   "name": "SpotifyControlBar",
-  "description": "Control Spotify playback directly from Discord chat",
+  "description": "Control Spotify playback directly from Discord chat.",
   "version": "1.0.0",
-  "authors": [{ "name": "cosmi" }],
-  "main": "index.js"
+  "authors": [
+    {
+      "name": "cosmi"
+    }
+  ],
+  "main": "index.js",
+  "format": 1
 }
